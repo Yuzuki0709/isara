@@ -1,0 +1,652 @@
+@charset "utf-8";
+
+@media(max-width: 600px){
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+    body{
+        /* width: 100%; */
+        box-sizing: border-box;
+    }
+    #wrapper{
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .btn_sns{
+        padding: 0 3px;
+    }
+    .key{
+        width: 95%;
+        margin: 0 auto;
+        font-size: 17px;
+        padding: 5px 20px;
+    }
+    .key h2{
+        margin: 10px 0 10px;
+        line-height: 40px;
+    }
+    .key::before{
+        width: 30px;
+        height: 30px;
+        border-top: 4px solid #ebb94d;
+        border-left: 4px solid #ebb94d;
+    }
+    .key::after{
+        width: 30px;
+        height: 30px;
+        border-bottom: 4px solid #ebb94d;
+        border-right: 4px solid #ebb94d;
+    }
+    .title{
+        font-size: 18px;
+    }
+    #btn-top{
+        bottom: 30px;
+        right: 10px;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    /* ヘッダー */
+    .header_wrapper{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 0;
+    }
+    .header_left{
+        flex-direction: column;
+        align-items: flex-start;
+        letter-spacing: 0;
+        padding: 0;
+    }
+    .header_left p{
+        order: 1;  
+        font-size: 10px; 
+        padding: 0;
+        margin: 0;     
+    }
+    .header_left img{
+        order: 2;
+        width: 35%;
+    }
+    .header_right{
+        display: none;
+    }
+    .humber{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #da6d64;
+        color: #fff;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 9px 11px;
+    }
+    .humber img{
+        width: 40%;
+        margin-left: 15px;
+    }
+    .humber p{
+        font-size: 12px;
+    }
+
+    /* セクション１ */
+    .sec1_wrapper{
+        width: 100%;
+        height: 312px;
+        background-image: url(../images/mainmin.jpg);
+    }
+    .area_content_sec1 h2{
+        font-size: 18px;
+    }
+    .area_content_sec1 h3{
+        font-size: 15px;
+    }
+    .area_content_sec1 img{
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* セクション２ */
+    .sec2{
+        height: auto;
+    }
+    .sec2_wrapper{
+        padding: 15px 0;
+    }
+    .sec2_1{
+        font-size: 15px;
+        margin-bottom: 1px;
+    }
+    .sec2_2{
+        font-size: 13.5px;
+        padding: 1px 3px;
+        margin-top: 8px;
+    }
+    .btn_sec2{
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .btn_sec2 a{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 35px;
+        margin: 10px 20px;
+    }
+    .sec2_3 p{
+        font-size: 14.5px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .respon{
+        display: block;
+    }
+    .area_sns_sec2{
+        margin-top: 0;
+    }
+
+    /* セクション３ */
+    .sec3_wrapper{
+        height: 680px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .sec3_2{
+        font-size: 15px;
+        padding: 25px 0 40px;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .sec3_2 p{
+        margin-bottom: 30px;
+        letter-spacing: 0;
+        line-height: 1.6;
+    }
+
+    /* セクション４ */
+    .sec4_wrapper{
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .area_title_sec4{
+        top: -30px;
+    }
+    .area_title_sec4 p{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .sentent1{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .container_sec4{
+        padding: 0;
+    }
+    .area_container_sec4{
+        width: 1170px;
+        max-width: calc(100% - 40px);
+        margin: 30px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .content_sec4{
+        width: 40%;
+        padding: 5px;
+        margin: 0;
+    }
+    .content_sec4 p{
+        font-size: 10px;
+    }
+    .content_sec4 img{
+        height: 30px;
+    }
+
+    /* セクション５ */
+    .area_content_sec5_1{
+        padding: 30px;
+    }
+    .area_content_sec5_1 h2{
+        font-size: 18px;
+    }
+    .area_sentent_sec5{
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 0;
+    }
+    .area_boxs_sec5{
+        display: block;
+    }
+    .box_sec5{
+        width: 100%;
+        padding: 15px 50px;
+        margin: 0 auto 15px;
+    }
+    .box_sec5 h3{
+        height: auto;
+        padding: 3px 0;
+        line-height: 12px;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .box_sec5 p:nth-child(2){
+        margin: 15px 5px;
+        font-size: 12px;
+    }
+    .box_sec5 p:nth-child(3){
+        font-size: 12px;
+        margin: 0;
+    }
+    .content_bottom{
+        font-size: 12px;
+    }
+
+    /* セクション６ */
+    .area_content_sec6 p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .area_main_sec6{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .area_main_sec6 img{
+        width: 56px;
+        margin: 0 5px;
+    }
+    .area_content_sec6 p:nth-child(4){
+        font-size: 12px;
+    }
+
+    /* セクション７ */
+    .sec7_1 p{
+        font-size: 15px;
+        margin: 15px 0 -10px;
+    }
+    .sec7_2{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .box_sec7{
+        width: 100%;
+        padding: 0 15px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .box_sec7 img{
+        height: 120px;
+        object-fit: cover; 
+    }
+    .box_sec7 h3{
+        margin: 10px 8px;
+        padding: 0;
+        font-size: 15px;
+        text-align: center;
+    }
+    .box_sec7 p{
+        font-size: 12px;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .sec7_3{
+        width: 90%;
+        padding: 10px;
+        line-height: 1.6;
+    }
+    .sec7_3 h2{
+        font-size: 18px;
+    }
+    .sec7_3 p:nth-child(2){
+        font-size: 15px;
+    }
+    .sec7_3 p:nth-child(3){
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .pc{
+        display: none;
+    }
+    .sec7_4{
+        font-size: 12px;
+        margin-top: 20px;
+        padding: 0 10px;
+        letter-spacing: 0;
+        line-height: 1.6;
+    }
+
+    /* セクション８ */
+    .sec8_1 p{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+    .sec8_2{
+        display: block;
+        width: 95%;
+    }
+    .box_sec8{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .text_box{
+        padding: 40px 10px 10px;
+        min-height: auto;
+    }
+    .box_sec8 img{
+        width: 120px;
+    }
+
+    /* セクション９ */
+    .sec9_1{
+        padding: 20px 0;
+    }
+    .sec9_1::after{
+        height: 0;
+        position: absolute;
+        width: 0;
+        border: 15px solid transparent;
+        border-top-color: #ebb94d;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+    }
+    
+    .sec9_title{
+        font-size: 14px
+    }
+    .qa p{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 12px;
+    }
+    .sec9_title::before{
+        width: 30px;
+        height: 30px;
+        border-top: 4px solid #fff;
+        border-left: 4px solid #fff;
+    }
+    .sec9_title::after{
+        width: 30px;
+        height: 30px;
+        border-bottom: 4px solid #fff;
+        border-right: 4px solid #fff;
+    }
+    .sec9_2{
+        padding-top: 20px;
+    }
+    .sec9_2 p{
+        font-size: 12px;
+    }
+    .sec9_2 p:nth-child(2){
+        margin-bottom: 20px;
+    }
+    .sec9_2 p:nth-child(3){
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .sec9_2 h2{
+        margin: 0 0 10px;
+    }
+    .box_sec9{
+        width: 95%;
+    }
+    .box_sec9 img{
+        width: 30%;
+        height: 30%;
+    }
+    .text_sec9{
+        margin-top: 0;
+    }
+    .text_sec9 p{
+        font-size: 14px;
+    }
+    .text_sec9 small{
+        font-size: 11px;
+    }
+
+    /* セクション１０ */
+    .sec10_1 p:nth-child(2){
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .area_list_sec10{
+        display: block;
+    }
+    .list_sec10{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .list_sec10 p{
+        font-size: 15px;
+        padding: 15px;
+    }
+    .list_sec10 li{
+        font-size: 12px;
+        padding: 10px;
+        font-weight: 600;
+    }
+    .sec10_2{
+        font-size: 15px;
+    }
+
+    /* セクション１１ */
+    .area_content_sec11_1{
+        display: none;
+    }
+    .box_sec11{
+        width: 95%;
+        display: block;
+        padding: 0;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .open-box{
+    }
+    .box_left{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: auto;
+        padding: 10px 15px;
+        position: relative;
+    }
+    .box_left:focus{
+        text-decoration: underline;
+    }
+    .box_left img{
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+    .box_left p{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+
+    .box_right{
+        font-size: 12px;
+        padding: 15px;
+        font-weight: 600;
+        display: none;
+    }
+    .small{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .border{
+        display: none;
+    }
+    .box_sec11:nth-child(3)>.box_left{
+        margin-top: 0;
+    }
+    .change-sec11{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .change-sec11 i{
+        font-weight: 600;
+    }
+
+    /* セクション１２ */
+    .sec12{
+    }
+    .sec12_wrapper{
+        padding: 20px 35px;
+        background-image: url(../images/bankok.jpg);
+        background-size: cover;
+        text-align: center;
+        background-position: center;
+    }
+    .sec12_2{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .area_text_sec12{
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .left{
+        text-align: left;
+    }
+
+    /* セクション１３*/
+    .sec13{
+    }
+    .sec13_wrapper{
+        padding: 20px 0;
+    }
+    .white{
+        font-size: 12px;
+        line-height: 1.6;
+    }
+    .sec13_wrapper p:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .box_title{
+        font-size: 18px;
+    }
+    .area_box_sec13{
+        width: 90%;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .box_sec13{
+        flex-direction: row;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        margin-bottom: -10px;
+        line-height: auto;
+        width: 100%;
+        height: auto;
+    }
+    .box_sec13 h3{
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        background-color: #fff;
+        border-radius: 50%;
+        font-size: 12px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .box_sec13 p{
+        font-size: 12px;
+        color: #fff;
+        text-align: left;
+        font-weight: 300;
+    }
+
+    /* セクション１４ */
+    .sec14_wrapper{
+        padding: 20px 10px;
+        background-image: url(../images/sec14_res.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .sec14_2{
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 1.6;
+    }
+    .sec14_3::before{
+        border-top: 4px solid #fff;
+        border-left: 4px solid #fff;
+    }
+    .sec14_3::after{
+        border-bottom: 4px solid #fff;
+        border-right: 4px solid #fff;
+    }
+    .sec14_4{
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0;
+    }
+
+    /* セクション１５ */
+    .box_sec15{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+    .img_box_15{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* セクション１６ */
+    .sec16_2{
+        font-size: 12px;
+    }
+    .area_input_sec16{
+        width: 90%;
+    }
+
+    /* セクション１７ */
+    .question_box{
+        width: 90%;
+    }
+    .question{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .question h3{
+        font-size: 15px
+    }
+    .question_right{
+        font-size: 15px;
+    }
+    .answer p{
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .btn_sns{
+        padding: 4px 9px;
+    }
+
+}

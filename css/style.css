@@ -1,0 +1,1463 @@
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+
+[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type="radio"] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button[disabled],
+[type="button"][disabled],
+[type="reset"][disabled],
+[type="submit"][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* ==============================================*/
+
+body{
+    color: #333;
+    letter-spacing: 1.5px;
+    font-style: normal;
+}
+
+/* ページトップに戻るボタン */
+#page-top{
+    /* position: sticky;
+    bottom: 100px;
+    left: 50px; */
+}
+#btn-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: inline-block;
+    background-color: #ececec;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 50%;
+    color: #000;
+}
+
+
+/* ----------- ヘッダー ------------*/
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 75px; */
+    background-color: #fff;
+    z-index: 4;
+}
+.header_wrapper{
+    width: 1170px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.header_left{
+    display: flex;
+    align-items: flex-end;
+}
+.header_left p{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.header_left img{
+    width: 125px;
+    display: inline-block;
+}
+.header_right a{
+    display: block;
+    padding: 15px 40px;
+    background-color: #da6b64;
+    border-radius: 25px;
+    color: #fff;
+}
+.header_right p{
+    font-weight: 300;
+}
+.header_right a:hover{
+    background-color: #d6473c;
+}
+.humber{
+    display: none;
+}
+
+/* メインコンテンツ */
+
+/* 共有部分 */
+.btn a{
+    display: block;
+    background-color: #da6d64;
+    border-radius: 50px;
+}
+.btn a:hover{
+    background-color: #d6473c;
+}
+.btn_sns{
+    display: block;
+    margin: 0 5px;
+    padding: 1px 8px 1px 6px;
+    font-size: 11px;
+    border-radius: 3px;
+    letter-spacing: 0px;
+}
+.btn_sns i{
+    margin-right: 3px;
+}
+.twitter{
+    background-color: #1b95e0;
+}
+.twitter:hover{
+    background-color: #12679c;
+}
+.fecebook, .share{
+    background-color: #3B5998;
+}
+.sentent1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container{
+    padding: 40px 0;
+    text-align: center;
+}
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 20px 0 35px;
+}
+.text{
+    font-size: 20px;
+    font-weight: 600;
+}
+.text_14{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.text_16{
+    font-size: 16px;
+    font-weight: 600;
+}
+.text_18{
+    font-size: 18px;
+    font-weight: 600;
+}
+.text_24{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.text_28{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content_bottom{
+    color: #fff;
+    background-color: #016ea9;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6;
+    padding: 40px 0;
+}
+.black{
+    color: #000;
+}
+.white{
+    color: #fff;
+}
+.text_12{
+    font-size: 12px;
+}
+.pc{
+    display: block;
+}
+
+/* セクション１ */
+.sec1_wrapper{
+    height: 500px;
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    position: relative;
+    letter-spacing: 2px;
+}
+.area_content_sec1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+}
+.area_content_sec1 img{
+    width: 317px;
+    margin-bottom: 25px;
+}
+.area_content_sec1 h2{
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+.area_content_sec1 h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* セクション２ */
+.sec2{
+    height: 600px;
+    background-color: #ebb94d;
+    line-height: 1.5em;
+}
+.sec2_wrapper{
+    text-align: center;
+    color: #fff;
+    padding: 45px 0;
+    font-weight: 500;
+}
+.sec2_1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.sec2_2{
+    background-color: #fff;
+    margin-top: 5px;
+    color: #c7254e;
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.btn_sec2 a{
+    padding: 30px 120px;
+    margin: 45px auto;
+    max-width: 1028px;
+    font-size: 28px;
+}
+.sec2_3 p{
+    font-size: 21px;
+    margin-bottom: 50px;
+}
+.area_sns_sec2{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+.respon{
+    display: none;
+}
+
+/* セクション３ */
+.sec3_wrapper{
+    padding: 40px 0;
+    height: 587px;
+    text-align: center;
+    background-image: url(../images/sec4.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+}
+.key{
+    display: inline-block;
+    /* margin-top: 40px; */
+    width: 860px;
+    padding: 40px 80px;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+.key::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid #ebb94d;
+    border-left: 3px solid #ebb94d;
+    content: "";
+}
+.key::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-bottom: 3px solid #ebb94d;
+    border-right: 3px solid #ebb94d;
+    content: "";
+}
+.sec3_2{
+    margin-top: 50px;
+    font-size: 20px;
+}
+.sec3_2 p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec3_2 span{
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+.sec3_2 span::before{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    background-color: #ebb94d;
+    content: "";
+    z-index: -1;
+}
+
+/* セクション４ */
+.sec4_wrapper{
+    height: 650px;
+    background-color: #fef5e0;
+    text-align: center;
+    position: relative;
+}
+.area_title_sec4{
+    position: relative;
+    top: -40px;
+}
+.area_title_sec4 p{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ebb94d;
+    line-height: 80px;
+    border-radius: 50%;
+}
+.sec4_2{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.area_container_sec4{
+    background-color: #fff;
+    border: 2px solid #ebb94d;
+    margin: 0 auto;
+    width: 1170px;
+}
+.container_sec4 p{
+    padding-bottom: 30px;
+}
+.container_sec4{
+    padding: 30px;
+}
+.contents_sec4{
+    margin: 0 auto;
+}
+.content_sec4{
+    display: inline-block;
+    margin: 0 4px;
+}
+.content_sec4 img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.content_sec4 p{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* セクション５ */
+.sec5_wrapper{
+    color: #fff;
+    text-align: center;
+    background-image: url(../images/sec5.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.area_content_sec5_1{
+    padding: 65px 135px 40px;
+}
+.area_content_sec5_1 h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.area_sentent_sec5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.area_sentent_sec5 p{
+    margin-bottom: 10px;
+}
+.area_sentent_sec5 span{
+    color: #ebb94d;
+}
+.area_boxs_sec5{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.box_sec5{
+    width: 33%;
+    padding: 30px 30px 40px 30px;
+    margin: 0 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+.box_sec5 h3{
+    margin-bottom: 35px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #ebb94d;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.box_sec5 p:nth-child(2){
+    font-size: 14px;
+    font-weight: 600;
+}
+.box_sec5 p:nth-child(3){
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.area_content_sec5_2 span{
+    color: #ebb94d;
+}
+
+/* セクション６ */
+.area_content_sec6 p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.area_content_sec6 p:nth-child(4){
+    font-size: 16px;
+    font-weight: 600;
+}
+.area_main_sec6{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.area_main_sec6 img{
+    max-width: 180px;
+    margin: 0 20px;
+}
+
+/* セクション７ */
+.sec7_wrapper{
+    background-color: #fef5e0;
+}
+.sec7_1 p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.sec7_2{
+    margin: 40px auto 55px;
+    display: flex;
+    justify-content: center;
+    max-width: 1160px;
+}
+.box_sec7{
+    width: 33%;
+    margin: 0 15px;
+}
+.box_sec7 img{
+    width: 100%;
+}
+.box_sec7 h3{
+    padding: 15px 0 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ebb94e;
+}
+.box_sec7 p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+.sec7_3{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 40px 20px;;
+    background-color: #fff;
+    border: 2px solid #ebb94e;
+}
+.sec7_3 h2{
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #ebb94e;
+}
+.sec7_3 p:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.sec7_3 p:nth-child(3){
+    margin-bottom: 10px;
+    font-size:16px;
+    font-weight: 600;
+    color: #333;
+}
+.sec7_4{
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* セクション８ */
+.sec8_wrapper{
+    background-image: url(../images/sec8.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.sec8_1 h2{
+    margin: 20px 0 45px;
+}
+.sec8_1 p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.sec8_2{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    line-height: 1.6;
+    
+}
+.box_sec8{
+    width: 33%;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+.box_sec8 img{
+    position: relative;
+    bottom: -35px;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.text_box{
+    min-height: 391px;
+    padding: 40px;
+    border: 2px solid #fff;
+}
+.text_box p{
+    margin-bottom: 15px;
+}
+
+/* セクション９ */
+.sec9_wrapper{
+    text-align: center;
+}
+.sec9_1{
+    padding: 40px;
+    background-color: #ebb94e;
+    position: relative;
+}
+.sec9_1::after{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    height: 0;
+    width: 0;
+    border: 25px solid transparent;
+    border-top-color: #ebb94e;
+    content: "";
+}
+.qa{
+    text-align: center;
+}
+.qa p{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #ebb94e;
+    border-radius: 50%;
+}
+.sec9_title{
+    color: #fff;
+}
+.sec9_title::before{
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+.sec9_title::after{
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+.sec9_2{
+    padding: 50px 0 35px;
+}
+.sec9_2 p:nth-child(2){
+    margin-bottom: 40px;
+}
+.sec9_2 p:nth-child(3){
+    font-size: 14px;
+}
+.sec9_3{
+    text-align: left;
+    padding-bottom: 20px;
+}
+.box_sec9{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 40px;
+}
+.box_sec9 img{
+    width: 35%;
+    height: auto;
+    margin-right: 15px;
+    border: 3px solid #ebb94e;
+}
+.text_sec9{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 10px 15px;
+    color: #777;
+    font-style: italic;
+    line-height: 1.6;
+}
+.text_sec9 p{
+    font-size: 18px;
+}
+.text_sec9 small{
+    margin-top: 8px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/* セクション１０ */
+.sec10_1{
+    background-image: url(../images/sec10.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.sec10_1 p:nth-child(2){
+    margin-bottom: 55px;
+}
+.area_list_sec10{
+    display: flex;
+    justify-content: center;
+}
+.list_sec10{
+    width: 375px;
+    height: 100%;
+    margin: 0 6px;  
+    display: inline-block;
+    border: 2px solid #016ea9;
+    border-radius: 5px;
+}
+.list_sec10 p{
+    padding: 25px;
+    background-color: #016ea9;
+}
+.list_sec10 li{
+    padding: 15px;
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+/* セクション１１ */
+.sec11_1{
+    margin-bottom: 40px;
+}
+.area_content_sec11_1{
+    margin-top: 55px;
+}
+.box_sec11{
+    width: 1170px;
+    padding: 10px 35px;
+    margin: 0 auto;
+    background-color: #fef5e0;
+    display: flex;
+}
+.box_left{
+    flex-shrink: 0;
+    width: 200px;
+    padding: 20px;
+}
+.box_left p{
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.box_sec11:nth-child(3)>.box_left{
+    margin-top: 40px;
+}
+.box_right{
+    text-align: left;
+    padding-top: 10px;
+}
+.box_right p{
+    margin: 20px 0;
+    line-height: 1.6;
+}
+.small{
+    font-size: 14px;
+}
+.change-sec11{
+    display: none;
+}
+
+/* セクション１２ */
+.sec12_wrapper{
+    padding: 90px 135px;
+    color: #fff;
+    background-image: url(../images/sec12.jpg);
+    background-size: cover;
+    text-align: left;
+    line-height: 1.6;
+}
+.sec12 p{
+    margin-bottom: 10px;
+}
+.area_text_sec12{
+    margin: 20px 0;
+}
+
+/* セクション１３ */
+.sec13_wrapper{
+    background-color: #f7c23c;
+}
+.sec13_wrapper p:nth-child(2){
+    margin-bottom: 80px;
+}
+.box_title{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #f7c23c;
+}
+.area_box_sec13{
+    width: 1170px;
+    margin: 0 auto 0;
+    margin-top: -15px;
+    padding: 40px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+.box_sec13{
+    width: 250px;
+    height: 250px;
+    line-height: 1.6;
+    margin: 0 60px;
+    padding: 50px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.box_sec13 h3{
+    margin: 0 0 10px;
+    font-weight: 300;
+    color: #ebb94e;
+}
+
+/* セクション１４ */
+.sec14_wrapper{
+    background-image: url(../images/sec14.jpg);
+    background-size: cover;
+    line-height: 1.6;
+    color: #fff;
+}
+.sec14_2{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.sec14_3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+}
+.sec14_4{
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.sec14_3::before{
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+.sec14_3::after{
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+
+/* セクション１５ */
+.sec15_wrapper{
+    line-height: 1.6;
+}
+.box_sec15{
+    width: 890px;
+    height: 336px;
+    margin: 50px auto 0;
+    display: flex;
+}
+.img_box_15{
+    width: 60%;
+    padding: 0 15px;
+}
+.box_sec15 img{
+    /* width: 192px;
+    height: 144px; */
+    width: 100%;
+}
+.text_box_15{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+.text_box_15 p{
+    margin-bottom: 10px;
+}
+.text_box_15 p:nth-child(3){
+    margin: 40px 0;
+}
+
+/* セクション１６ */
+.sec16_wrapper{
+    background-color: #ebb94e;
+}
+.sec16_2{
+    margin-bottom: 40px;
+}
+.area_input_sec16{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 865px;
+    text-align: left;
+}
+.input_1:focus{
+    outline-offset: -3px;
+    outline: 2px solid #e85298;
+    border-radius: 5px;
+}
+.input_2:focus{
+    outline-offset: -3px;
+    outline: 2px solid #e85298;
+    border-radius: 5px;
+}
+input::placeholder{
+    font-size: 14px;
+    color: #aaabab;
+}
+.input_1{
+    background-color: #fff;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.mail{
+    width: 99%;
+    margin: 0 auto;
+}
+.input_2{
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 25px 0 40px 0;
+}
+.input_2::placeholder{
+    position: relative;
+    top: -30px;
+}
+.input_3{
+    width: 100%;
+    height: 55px;
+    margin: 10px auto;
+    display: block;
+    background-color: #da6d64;
+    border-radius: 50px;
+    padding: 10px 80px;
+    font-size: 23px;
+    font-weight: 600px;
+    color: #fff;
+    text-align: center;
+}
+
+/* セクション１７ */
+.question_box{
+    width: 1110px;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+.question{
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 20px;
+    cursor: pointer;
+}
+.question h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.fa-question-circle{
+    color: #016ea9;
+}
+.question a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* pointer-events: none; */
+}
+.question h3:hover{
+    text-decoration: underline;
+}
+.question_right {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    color: #e5e5e5;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+}
+.answer{
+    text-align: left;
+    padding: 20px;
+    display: none;
+}
+.answer p{
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;    
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.open{
+    display: block;
+}
+
+/* フッター */
+.footer-wrapper{
+    background-color: #ececec;
+    font-size: 10px;
+}
+.footer-wrapper p{
+    margin-bottom: 5px;
+}
+.area_sns_footer{
+    margin-top: 10px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.btn_sns{
+    padding: 4px 9px;
+}
